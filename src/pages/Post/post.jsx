@@ -1,22 +1,35 @@
-import React from 'react'
-import './post.css'
+import React from 'react';
+import './post.css';
 import { FaFileUpload } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 const post = () => {
-  return (
-    <div className='main-post'>
-         <Link to='/'><h2>Blog <span>App.</span></h2></Link>
-        <h3>Posts</h3>
-        <div className='post-content'>
-            <div className='card'> 
-               <p><FaFileUpload /> <br/>Upload a Post</p>
-               <h5><IoMdAdd /> add title</h5>
-               <p><IoMdAdd /> add paragraph</p>
-            </div>
-        </div>
-    </div>
-  )
+  return React.createElement(
+    'div', 
+    { className: 'main-post' },
+    React.createElement(Link, { to: '/' },
+      React.createElement('h2', null, 'Blog ', React.createElement('span', null, 'App.'))
+    ),
+    React.createElement('h3', null, 'Posts'),
+    React.createElement('div', { className: 'post-content' },
+      React.createElement('div', { className: 'card' },
+        React.createElement('p', null, 
+          React.createElement(FaFileUpload, null),
+          React.createElement('br', null),
+          'Upload a Post'
+        ),
+        React.createElement('h5', null, 
+          React.createElement(IoMdAdd, null), 
+          ' add title'
+        ),
+        React.createElement('p', null, 
+          React.createElement(IoMdAdd, null), 
+          ' add paragraph'
+        )
+      )
+    )
+  );
 }
 
-export default post
+export default post;
