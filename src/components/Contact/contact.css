@@ -1,0 +1,98 @@
+/* Main Contact Container */
+.main-contact {
+    display: flex;
+    justify-content: start; /* Aligns content to the start */
+    gap: 150px; /* Adds space between the flex items */
+    padding: 20px;
+    background-color: #050505;
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Contact Content Styling */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Limit the width of each section */
+    margin: 20px 0;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    color: #f7f6f6;
+}
+
+.contact-content  a {
+    text-decoration: none;
+}
+
+.contact-content h2 span {
+    color: #ff4a4a; /* Accent color */
+}
+
+.contact-content p {
+    font-size: 1rem;
+    color: #918d8d;
+    margin: 10px 0;
+}
+
+.contact-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #eeebeb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-contact {
+        justify-content: center; /* Center the content on smaller screens */
+        padding: 10px;
+        margin-top: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-content {
+        max-width: 250px;
+    }
+
+    .contact-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-contact {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        margin-top: -60px;
+    }
+
+    .contact-content {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-content p {
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,110 @@
+.main-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo h2 span {
+    color: #ff4a4a; /* Accent color */
+}
+
+.register-content {
+    width: 100%;
+    max-width: 400px; /* Restrict max width for better design */
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.register-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.register-content label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #555;
+}
+
+.register-content input {
+    width: 92%;
+    padding: 0.75rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-content button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.register-content button:hover {
+    background-color: #e04343;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-content {
+        padding: 1.5rem;
+    }
+
+    .register-content h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-register {
+        margin-top: -139px;
+    }
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .register-content {
+
+        margin-top: 100px;
+    }
+
+    .register-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .register-content input {
+        padding: 0.5rem;
+    }
+
+    .register-content button {
+        padding: 0.5rem;
+    }
+}

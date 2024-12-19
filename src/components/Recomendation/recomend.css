@@ -1,0 +1,122 @@
+
+/* Main Container */
+.main-recomend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 70vh;
+}
+
+.main-recomend h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.main-recomend p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Categories Flexbox */
+.categories {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 20px; /* Adds space between flex items */
+    width: 100%;
+    max-width: 1200px; /* Max width for better design */
+}
+
+/* Individual Category Styling */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 235, 235);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.category h6 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.category button {
+    padding: 0.5rem 1rem;
+    background-color: #b41818;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.category button:hover {
+    background-color: #e04343;
+}
+
+.category svg {
+    font-size: 3rem;
+    color: #a01f1f; /* Accent color for icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-recomend h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-recomend p {
+        font-size: 1rem;
+    }
+
+    .category {
+        width: 280px;
+    }
+
+    .category h6 {
+        font-size: 1rem;
+    }
+
+    .category svg {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-recomend h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-recomend p {
+        font-size: 1rem;
+    }
+
+    .category {
+        width: 280px;
+        padding: 15px;
+    }
+
+    .category h6 {
+        font-size: 1rem;
+    }
+
+    .category svg {
+        font-size: 2rem;
+    }
+
+    .category button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
